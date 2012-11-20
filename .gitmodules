@@ -1,0 +1,12 @@
+[submodule "miconf"]
+	path = miconf
+	url = git@bitbucket.org:iridl/miconf.git
+[submodule "pure"]
+	path = pure
+	url = git@bitbucket.org:iridl/pure.git
+[submodule "maproomtools"]
+	path = maproomtools
+	url = git@bitbucket.org:iridl/maproomtools.git
+[submodule "uicore"]
+	path = uicore
+	url = git@bitbucket.org:iridl/uicore.git
