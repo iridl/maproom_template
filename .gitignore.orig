@@ -1,9 +1,8 @@
 *~
 .DS_Store
 /build.tag
-/maproom/Examples/index.html.en
+/maproom/version.xml
 /maproom/canonical_imports.serql
-/maproom/index.html.en
 /maproom/maproom_section_index.serql
 /maproom/maproomregistry.owl
 /maproom/maproomtop.owl
