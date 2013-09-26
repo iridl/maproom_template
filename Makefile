@@ -13,7 +13,7 @@ TARBALL = $(VER)
 build: build.tag
 build.tag: maproom/version.xml
 	cd maproom; ../maproomtools/build_maproom.pl;
-	miconf -c config.lua -p '[.]tpost$$' -r .
+	echo "Generating local apache configuration file localmaproom.conf. . ."; miconf -c config.lua -p '[.]tpost$$' -r .
 	touch build.tag
 
 utbuild.tag: build.tag
