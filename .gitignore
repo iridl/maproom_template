@@ -1,6 +1,7 @@
 *~
 .DS_Store
 /build.tag
+/localmaproom.conf
 /maproom/Examples/index.html.en
 /maproom/canonical_imports.serql
 /maproom/index.html.en
