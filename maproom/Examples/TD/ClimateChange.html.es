@@ -6,7 +6,6 @@
       xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
       xmlns:xs="http://www.w3.org/2001/XMLSchema#"
       version="XHTML+RDFa 1.1"
- xml:lang="es"
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
@@ -45,7 +44,7 @@ color: blue;
 }
 </style>
 </head>
-<body>
+<body xml:lang="es">
 <form name="pageform" id="pageform" class="carryup carry dlimg dlimgts dlauximg dlimgloc share">
 <input class="carryup carry" name="Set-Language" type="hidden" />
 <input class="carry dlimg dlimgloc share" name="bbox" type="hidden" />
