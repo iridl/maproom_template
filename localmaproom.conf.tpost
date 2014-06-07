@@ -13,6 +13,11 @@
       LanguagePriority en es de fr
       ForceLanguagePriority Prefer Fallback
    </Directory>
+   <Directory "<<<RepoDir>>>/uicore/toolinfo">
+      Options Indexes FollowSymLinks MultiViews
+      LanguagePriority en es de fr
+      ForceLanguagePriority Prefer Fallback
+   </Directory>
    # We use UTF-8 and want json to be a known type for language
    AddType application/json .json
    AddCharset UTF-8 .json
@@ -22,6 +27,10 @@
    RewriteEngine On
    RewriteCond %{QUERY_STRING} Set-Language=([^&]+)
    RewriteRule .? -  [E=prefer-language:%1]
+
+#Proxy or Rewrite rules to redirect requests of the apache server
+#to a local or remote ingrid -- means that apache serves the role of
+#squid, allowing simple setup of a prototype maproom
 
 <<<ProxyRules>>>
 
