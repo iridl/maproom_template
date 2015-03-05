@@ -4,33 +4,33 @@
    ServerName <<<ServerName>>>
    ServerAlias <<<ServerAlias>>>
    # DL Maproom Configuration
-   DocumentRoot <<<RepoDir>>>/dldoc
-   <Directory "<<<RepoDir>>>/dldoc">
+   DocumentRoot <<<RepoDir>>>/___build/dldoc
+   <Directory "<<<RepoDir>>>/___build/dldoc">
       Options Indexes FollowSymLinks MultiViews
       LanguagePriority en es de fr
       ForceLanguagePriority Prefer Fallback
    </Directory>
-   Alias /localconfig <<<RepoDir>>>/localconfig
-   <Directory "<<<RepoDir>>>/localconfig">
+   Alias /localconfig <<<RepoDir>>>/___build/localconfig
+   <Directory "<<<RepoDir>>>/___build/localconfig">
       Options Indexes FollowSymLinks MultiViews
       LanguagePriority en es de fr
       ForceLanguagePriority Prefer Fallback
    </Directory>
-   Alias /maproom <<<RepoDir>>>/maproom
-   Alias /uicore  <<<RepoDir>>>/uicore
-   Alias /pure    <<<RepoDir>>>/pure
-   Alias /jsonld    <<<RepoDir>>>/jsonld.js/js
+   Alias /maproom <<<RepoDir>>>/___build/maproom
+   Alias /uicore  <<<RepoDir>>>/___build/uicore
+   Alias /pure    <<<RepoDir>>>/___build/pure
+   Alias /jsonld    <<<RepoDir>>>/___build/jsonld.js/js
 === if MacSetup then
-   <Directory "<<<RepoDir>>>">
+   <Directory "<<<RepoDir>>>/___build">
       Allow from <<<Host>>>
    </Directory>
 === end
-   <Directory "<<<RepoDir>>>/maproom">
+   <Directory "<<<RepoDir>>>/___build/maproom">
       Options Indexes FollowSymLinks MultiViews
       LanguagePriority en es de fr
       ForceLanguagePriority Prefer Fallback
    </Directory>
-   <Directory "<<<RepoDir>>>/uicore/toolinfo">
+   <Directory "<<<RepoDir>>>/___build/uicore/toolinfo">
       Options Indexes FollowSymLinks MultiViews
       LanguagePriority en es de fr
       ForceLanguagePriority Prefer Fallback
