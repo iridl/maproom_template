@@ -1,1 +1,22 @@
 /* overrides uicore.css choices */
+
+#homelink {
+			background: url('/localconfig/icons/un_logo_small.jpg') left no-repeat;
+			background-size: 95%;
+			opacity: 0.75;
+		}
+#homelink select {
+max-width: 104px;
+
+}
+/*Selector de ID*/
+#homelink:hover {
+     background-size: 100% auto;
+     color: blue;
+     opacity: 1;
+}
+
+.optionsBar {
+     background: url('/localconfig/icons/un_logo_small.jpg') right no-repeat;
+     background-size: 70px;
+}
